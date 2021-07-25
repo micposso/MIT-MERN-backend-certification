@@ -5,11 +5,11 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const port = process.env.PORT;
-
-var low     = require('lowdb');
-var fs      = require('lowdb/adapters/FileSync');
-var adapter = new fs('db.json');
-var db      = low(adapter);
+const bodyParser = require('body-parser');
+const low     = require('lowdb');
+const fs      = require('lowdb/adapters/FileSync');
+const adapter = new fs('db.json');
+const db      = low(adapter);
 
 // declate public assets folder
 app.use(express.static('public'));
@@ -20,6 +20,14 @@ app.use(express.static('public'));
 
 // init the data store
 db.defaults({ posts: []}).write();
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+// post route
+app.post('/test', (req, res) => {
+    console.log(req.body.username, req.body.password);
+    res.send(req.body.username + " " + req.body.password)
+})
 
 app.get('/', function(req, res){     
     // YOUR CODE
@@ -75,7 +83,7 @@ app.get('/delete/:id/', function(req, res){
 });
 
 // handle non-existing routes
-app.get('*', function(req, res) {  res.send('This page does not exist');});
+app.get('*', (req, res) => {  res.send('This page does not exist');});
 
 
 // start server
