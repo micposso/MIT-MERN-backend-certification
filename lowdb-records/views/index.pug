@@ -1,5 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  main.container
+    h1= title
+    p Welcome to #{title}
+    form
+      div.form-group
+        label(for="")
+          input.form-control(type="text")#id 
