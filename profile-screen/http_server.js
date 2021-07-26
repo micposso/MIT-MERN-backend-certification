@@ -30,7 +30,7 @@ app.post('/test', (req, res) => {
 })
 
 // add users
-app.post('/users', (req, res) => {
+app.post('/add-user', (req, res) => {
     const user = {
         'name': req.body.name,
         'dob': req.body.dob,
