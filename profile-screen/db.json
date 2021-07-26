@@ -1,3 +1,83 @@
 {
-  "posts": []
+  "posts": [],
+  "users": [
+    {
+      "name": "Felicita Wisoky",
+      "dob": "1973-2-8",
+      "email": "Felicita_Wisoky13@hotmail.com",
+      "username": "Felicita_Wisoky",
+      "password": "3H8PkjemO14OXmj",
+      "phone": "(820) 954-7072",
+      "streetaddress": "405 Pietro Loaf",
+      "citystatezip": "North Taylorside, NM 11117",
+      "latitude": "-60.8762",
+      "longitude": "97.0800",
+      "avatar": "https://cdn.fakercloud.com/avatars/_dwite__128.jpg"
+    },
+    {
+      "name": "Hassan Wuckert",
+      "dob": "1970-7-27",
+      "email": "Hassan_Wuckert55@gmail.com",
+      "username": "Hassan14",
+      "password": "K5sSq8F1PuqCBDu",
+      "phone": "1-251-318-9794",
+      "streetaddress": "00314 Willa Court",
+      "citystatezip": "Madisenfort, MN 23431-1978",
+      "latitude": "55.2006",
+      "longitude": "141.2383",
+      "avatar": "https://cdn.fakercloud.com/avatars/stefooo_128.jpg"
+    },
+    {
+      "name": "Kameron Hermiston",
+      "dob": "1949-6-13",
+      "email": "Kameron.Hermiston10@hotmail.com",
+      "username": "Kameron_Hermiston",
+      "password": "l46hoI_GmqURPVl",
+      "phone": "451.855.2869 x1040",
+      "streetaddress": "47879 Elody Street",
+      "citystatezip": "Port Devonbury, KS 77416-6359",
+      "latitude": "52.6539",
+      "longitude": "-71.7410",
+      "avatar": "https://cdn.fakercloud.com/avatars/mvdheuvel_128.jpg"
+    },
+    {
+      "name": "Bonnie Harber",
+      "dob": "1968-6-11",
+      "email": "Bonnie_Harber92@hotmail.com",
+      "username": "Bonnie_Harber",
+      "password": "Rpk1jb7Fvp4OXKJ",
+      "phone": "(679) 714-7627 x597",
+      "streetaddress": "146 Schumm Oval",
+      "citystatezip": "Lelialand, MN 31551-3621",
+      "latitude": "80.2355",
+      "longitude": "-109.5225",
+      "avatar": "https://cdn.fakercloud.com/avatars/mutlu82_128.jpg"
+    },
+    {
+      "name": "Ocie Schaden",
+      "dob": "1988-10-30",
+      "email": "Ocie.Schaden@yahoo.com",
+      "username": "Ocie.Schaden",
+      "password": "5nnyFA1tBeZIrzF",
+      "phone": "1-807-808-7974 x713",
+      "streetaddress": "303 Zulauf Brooks",
+      "citystatezip": "Raymondberg, VA 95192-2736",
+      "latitude": "30.4982",
+      "longitude": "-121.4840",
+      "avatar": "https://cdn.fakercloud.com/avatars/carlosgavina_128.jpg"
+    },
+    {
+      "name": "Vladimir Heaney",
+      "dob": "1950-5-2",
+      "email": "Vladimir85@hotmail.com",
+      "username": "Vladimir_Heaney52",
+      "password": "0nFT13czMIR5uqv",
+      "phone": "1-211-899-0410",
+      "streetaddress": "8318 Koelpin Mountain",
+      "citystatezip": "Janesville, MA 50303-3413",
+      "latitude": "18.0798",
+      "longitude": "111.2937",
+      "avatar": "https://cdn.fakercloud.com/avatars/mutu_krish_128.jpg"
+    }
+  ]
 }
