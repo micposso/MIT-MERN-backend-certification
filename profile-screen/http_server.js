@@ -23,12 +23,6 @@ db.defaults({ posts: []}).write();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// post route
-app.post('/test', (req, res) => {
-    console.log(req.body.username, req.body.password);
-    res.send(req.body.username + " " + req.body.password)
-})
-
 // add users
 app.post('/add-user', (req, res) => {
     const user = {
@@ -60,7 +54,7 @@ app.get('/', function(req, res){
 // list posts
 app.get('/data', function(req, res){     
     // YOUR CODE
-    res.send(db.get('posts').value());
+    res.send(db.get('users').value());
 
 });
 
