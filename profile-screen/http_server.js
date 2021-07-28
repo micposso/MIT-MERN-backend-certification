@@ -10,9 +10,13 @@ const low     = require('lowdb');
 const fs      = require('lowdb/adapters/FileSync');
 const adapter = new fs('db.json');
 const db      = low(adapter);
+const cors    = require('cors');
 
 // declate public assets folder
 app.use(express.static('public'));
+
+// Allow cross-origin resrouce sharing
+app.use(cors());
 
 // configure express to serve static files from public directory
 // ------------------------------------------------------------------
@@ -22,12 +26,6 @@ app.use(express.static('public'));
 db.defaults({ posts: []}).write();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-
-// post route
-app.post('/test', (req, res) => {
-    console.log(req.body.username, req.body.password);
-    res.send(req.body.username + " " + req.body.password)
-})
 
 // add users
 app.post('/add-user', (req, res) => {
@@ -60,7 +58,7 @@ app.get('/', function(req, res){
 // list posts
 app.get('/data', function(req, res){     
     // YOUR CODE
-    res.send(db.get('posts').value());
+    res.send(db.get('users').value());
 
 });
 
