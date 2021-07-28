@@ -10,9 +10,13 @@ const low     = require('lowdb');
 const fs      = require('lowdb/adapters/FileSync');
 const adapter = new fs('db.json');
 const db      = low(adapter);
+const cors    = require('cors');
 
 // declate public assets folder
 app.use(express.static('public'));
+
+// Allow cross-origin resrouce sharing
+app.use(cors());
 
 // configure express to serve static files from public directory
 // ------------------------------------------------------------------
